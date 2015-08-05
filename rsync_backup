@@ -1,0 +1,9 @@
+#!/bin/bash
+
+rsync -u -r -v -e ssh --progress --delete --chmod=D775 /path/to/documents/* your_server_name@your_domain:~/public_html/documents/ --exclude=.htaccess --exclude=.htaccess~
+
+rsync -u -r -v -e ssh --progress --delete --chmod=D775 /path/to/music/* your_server_name@your_domain:~/public_html/music/ --exclude=.htaccess --exclude=.htaccess~
+
+rsync -u -r -v -e ssh --progress --delete --chmod=D775 /path/to/photos/* your_server_name@your_domain:~/public_html/photos/ --exclude=.htaccess --exclude=.htaccess~
+
+rsync -u -r -v -e ssh --progress --delete --chmod=D775 /path/to/movies/* your_server_name@your_domain:~/public_html/movies/ --exclude=.htaccess --exclude=.htaccess~
